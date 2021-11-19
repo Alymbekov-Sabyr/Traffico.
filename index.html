@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="shortcut icon" href="" type="image/x-icon">
+      <title>TRAFICO.</title>
+   </head>
+   <body>
+      <header>
+         <img src="/assets/Scene.png" alt="" class="bg" id="bg"/>
+         <img src="/assets/mobel.png" alt="" class="mobel" />
+         <div class="top">
+            <nav class="logo">
+               <img src="/assets/logo.png" alt="" class="logo_img" />
+            </nav>
+            <nav class="btn">
+               <a href="#" class="about on"> ABOUT </a>
+               <a href="#" class="howto on"> HOW TO </a>
+               <a href="#" class="faqs on"> FAQS </a>
+               <a href="#" class="contact on"> CONTACT US </a>
+            </nav>
+            <div class="container">
+               <div class="toggle-menu">
+                  <div class="line line1"></div>
+                  <div class="line line2"></div>
+                  <div class="line line3"></div>
+               </div>
+               <nav class="header__nav nav-bar">
+                  <ul class="nav-list">
+                     <li class="nav-list-item">
+                        <a href="" class="nav-link">ABOUT</a>
+                     </li>
+                     <li class="nav-list-item">
+                        <a href="" class="nav-link">HOW TO</a>
+                     </li>
+                     <li class="nav-list-item">
+                        <a href="" class="nav-link">FAQS</a>
+                     </li>
+                     <li class="nav-list-item">
+                        <a href="" class="nav-link">CONTACT US</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="cen">
+            <h1 class="txt">
+               Your awesome traffic permit consultant.
+            </h1>
+            <a href="#" class="gs">GET STARTED <img src="assets/Union.png" alt="#" class="union"></a>
+         </div>
+      </header>
+      <script>
+         document.documentElement.style.setProperty(
+            "--x",
+            window.innerWidth * 0.49375 + "px"
+         );
+         document.documentElement.style.setProperty(
+            "--y",
+            window.innerWidth - 60 + "px"
+         );
+         document.documentElement.style.setProperty(
+            "--w",
+            948 * (190 / Math.round((((1600 * ((100 - 19.726) / 100)) * 79) / 107))) + "px"
+         );
+         var toggleButton = document.querySelector(".toggle-menu");
+         var navBar = document.querySelector(".nav-bar");
+         toggleButton.addEventListener("click", function () {
+            navBar.classList.toggle("toggle");
+            toggleButton.classList.toggle("tog");
+         });
+      </script>
+   </body>
+</html>
